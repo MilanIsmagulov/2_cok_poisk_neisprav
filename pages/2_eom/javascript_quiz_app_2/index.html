@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+    <title>Поиск неисправностей</title>
+</head>
+<body>
+    <div class="main_window">
+        <div class="black_header">
+            <h1>
+                Поиск неисправностей
+            </h1>
+            <div class="links_black_header">
+                <a href="../../../index.html">На главную</a>
+                <a href="../../../new_material/page_new_mat.html" class="disabled_button">Назад</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="quiz_window">
+                <div id="quiz_part">
+                    <div class="window_header">
+                        <div class="questions" id="question_number_1">
+                            
+                        </div>
+                        <div class="number_marker">
+                            <img id="open_popup_button" src="./content/description.svg" alt="description">
+                            <p class="number_description">3/10</p>
+                        </div>
+
+                    </div>
+                    <div class="theory_eom" id="theory_eom_2">
+                        <p style="margin-left: 20px;">
+                            Для обнаружения неисправностей в электрических схемах используются визуальные и инструментальные методы обнаружения неисправностей. <br>
+                            К инструментальным относят: проверка целостности цепи, проверка сопротивления изоляции и измерение переходного сопротивления контактов. <br>
+                        </p>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part">
+                                        <img class="main_image" src="./content/draw_2.png" width="400px" alt="1">
+                                        <button class="zoom_popup" ><img src="./content/zoom_up.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Перемычка на клеммнике Х2 между клеммами № 38 и 42, создает короткое замыкание в цепи сигнализации ~24В
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Обнаружение неисправности с помощью мультиметра в режиме «прозвонки»
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part">
+                                        <img class="main_image" src="./content/draw_3.png" width="150px" alt="1">
+                                        <button id="second_image_3" class="zoom_popup zoom" ><img src="./content/zoom_up.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    На контакторе КМ10 изменено подключение проводников с №32 и № 34, в данном случае при включении КМ10 реверс двигателя не будет осуществлен
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Обнаружение неисправности с помощью мультиметра в режиме «прозвонки»
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part_2">
+                                        <img class="main_image_2" src="./content/4.png" width="500px" alt="1">
+
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Имитация обрыва провода (в клеммнике Х2 №9)
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Обнаружение неисправности с помощью мультиметра в режиме «прозвонки»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part_2">
+                                        <img class="main_image_2" src="./content/5.png" width="300px" alt="1">
+
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Имитация обрыва провода в «звезда-треугольник» 
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Обнаружение неисправности с помощью мультиметра в режиме «прозвонки»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part_2">
+                                        <img class="main_image_2" src="./content/7.png" width="250px" alt="1">
+
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Некорректно установленное оборудование 
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Визуальное обнаружение при сверке оборудования согласно спецификации
+                                    <div class="image_part">
+                                        
+                                        <img class="main_image" src="./content/6.png" width="400px" alt="1">
+                                        <button id="second_image_4" class="zoom_popup zoom" ><img src="./content/zoom_up.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part_2">
+                                        <img class="main_image_2" src="./content/9.png" width="500px" alt="1">
+
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Некорректно установленное оборудование 
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Визуальное обнаружение при сверке оборудования согласно спецификации <br><br>
+                                    Лампа НL15 вперед неверный цвет линзы
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_draw_and_text">
+                            <div class="table">
+                                <div class="rows"><span>Схема</span><br>
+                                    <div class="image_part_2">
+                                        <div class="image_part">
+                                        
+                                            <img style="margin: 10px; margin-right: 25px; margin-top: 25px;" class="main_image" src="./content/10.png" width="150px" alt="1">
+                                            <button id="second_image_5" class="zoom_popup zoom" ><img src="./content/zoom_up.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rows"><span>Неисправность</span><br>
+                                    Некорректные уставки
+                                </div>
+                                <div class="rows"><span>Способ обнаружения</span><br>
+                                    Визуальное обнаружение при сверке параметров работы устройств, согласно схемы технической документации
+                                    <div class="image_part">
+                                        
+                                        <img class="main_image" src="./content/11.png" width="100px" alt="1">
+                                        <button id="second_image_6" class="zoom_popup zoom" ><img src="./content/zoom_up.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step_marker_and_buttons">
+                        <div class="step_marker">
+                            
+                        </div>
+                        <div class="main_buttons">
+                            <button id="check_button_0" onclick="location.href='../javascript_quiz_app_1/index.html'">
+                                Назад
+                            </button>
+                            <button id="check_button_3" onclick="location.href='../javascript_quiz_app_3/index.html'">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="popup1" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_1"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+
+                        <img height="700px" src="./content/2.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_3"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+
+                        <img height="700px" src="./content/3.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_4"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+
+                        <img height="700px" src="./content/8.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup5" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_5"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+
+                        <img height="700px" src="./content/12.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup6" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_6"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+
+                        <img height="700px" src="./content/13.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_2"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <h3>1. Ознакомьтесь с правилами безопасной работы.</h3>
+                        <h3>2. Ознакомьтесь со способами обнаружения неисправностей.</h3>
+                        <h3>3. Посмотрите видеоролик о проверке индикации.</h3>
+                        <h3>4. Посмотрите видеоролик о проверке корректности установленного оборудования и заданных режимов работы.</h3>
+                        <h3>5. Посмотрите видеоролик о пуске двигателя в режимах «звезда-треугольник».</h3>
+                        <h3>6. Посмотрите видеоролик о пуске двигателя в пуске «звезда-треугольник».</h3>
+                        <h3>7. Посмотрите видеоролик о  пуске двигателя с задержкой отключения.</h3>
+                        <h3>8. Посмотрите видеоролик о неисправности в первом режиме работы.</h3>
+                        <h3>9. Посмотрите видеоролик о неисправности во втором режиме работы.</h3>
+                        <h3>10. Посмотрите видеоролик о неисправности во третьем режиме работы.</h3>
+                        <h3>11. Укажите, при каком виде неисправности реверс двигателя не будет осуществлен.</h3>
+                        <h3>12. Укажите, в каком случае при нажатии кнопки «ПУСК» включается сигнальная лампа «РЕВЕРС».</h3>
+                        <h3>13. Укажите, в каком случае при нажатии кнопки «ПРОВЕРКА ЛАМП» световая индикация не осуществляется, индикация только на лампах «ГОТОВ» и «АВАРИЯ».</h3>
+                        <h3>14. Укажите, в каком случае при нажатии кнопки «ПУСК» на стенде включается одновременно индикаторная лампа «СТУПЕНЬ1»,  «СТУПЕНЬ2».</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
