@@ -52,14 +52,21 @@ body{
     background: #fff;
 }
 
+#theory_eom_2{
+    align-items: flex-start !important;
+}
+
+#theory_eom_2 p{
+    font-size: clamp(20px,2vw,25px) !important;
+}
 
 .incorrect {
     background-color: rgb(255, 144, 144);
 }
 
 .quiz_window p{
-    font-size: 30px;
-    padding: 25px;
+    font-size: 30px !important;
+    padding: 1vw !important;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
@@ -153,9 +160,9 @@ body{
 }
 
 .number_marker p{
-    font-size: 25px;
+    font-size: 25px !important;
     color: #000;
-    padding: 25px;
+    padding: 25px !important;
     border-left: 3px solid #000;
 }
 
@@ -237,58 +244,8 @@ body{
     cursor: no-drop;
 }
 
-.incorrect input{
-    cursor: no-drop;
-}
-
-.answer_div img{
-    margin-left: 25px;
-    height: 40px;
-}
-
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .popup_draw_and_text{
-        flex-direction: column;
-    }
-
-    .theory_eom{
-        height: 460px;
-    }
-
-    .answers_btn form div {
-        width: 700px;
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 0px;
-    }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-}
-
 .step_marker_and_buttons{
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -298,5 +255,14 @@ body{
 
 .second ul li {
     margin-left: 50px;
+}
+
+.incorrect input{
+    cursor: no-drop;
+}
+
+.answer_div img{
+    margin-left: 25px;
+    height: 40px;
 }
 

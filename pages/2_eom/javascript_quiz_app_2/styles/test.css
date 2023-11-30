@@ -58,7 +58,7 @@ body{
 }
 
 .quiz_window p{
-    font-size: 30px;
+    font-size: clamp(20px,2vw,30px);
     padding: 25px;
     color: rgb(255, 114, 118);
     font-weight: 700;
@@ -246,46 +246,6 @@ body{
     height: 40px;
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .popup_draw_and_text{
-        flex-direction: column;
-    }
-
-    .theory_eom{
-        height: 460px;
-    }
-
-    .answers_btn form div {
-        width: 700px;
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 0px;
-    }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-}
 
 .step_marker_and_buttons{
     padding-top: 70px;
