@@ -115,6 +115,15 @@
     padding: 25px;
 }
 
+.w50{
+    width: clamp(300px,40vw,600px) !important;
+}
+
+.w70{
+    width: clamp(300px,70vw,900px) !important;
+}
+
+
 .popup_header {
     display: flex;
     align-items: center;

@@ -118,3 +118,23 @@ openPopUpButton6.addEventListener('click', function(){
 closePopUpButton6.addEventListener('click', function(){
     popUpWindow6.classList.add('close')
 })
+
+let openPopUpButton7 = document.querySelector('#second_image_7')
+let popUpWindow7 = document.querySelector('#popup7')
+let closePopUpButton7 = document.querySelector('#close_popup_button_7')
+openPopUpButton7.addEventListener('click', function(){
+    popUpWindow7.classList.remove('close')
+})
+closePopUpButton7.addEventListener('click', function(){
+    popUpWindow7.classList.add('close')
+})
+
+let openPopUpButton8 = document.querySelector('#second_image_8')
+let popUpWindow8 = document.querySelector('#popup8')
+let closePopUpButton8 = document.querySelector('#close_popup_button_8')
+openPopUpButton8.addEventListener('click', function(){
+    popUpWindow8.classList.remove('close')
+})
+closePopUpButton8.addEventListener('click', function(){
+    popUpWindow8.classList.add('close')
+})
